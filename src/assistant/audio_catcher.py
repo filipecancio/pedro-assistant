@@ -1,6 +1,6 @@
 import speech_recognition as SR
 from general_functions import getDirectory
-from phrase_processor import PhraseProcessor
+from assistant.phrase_processor import PhraseProcessor
 
 class AudioCatcher:
     def __init__(self):

@@ -77,7 +77,6 @@ class TesteCachorro(unittest.TestCase):
 
         # execution
         response = assistant.doComand(audio_mock)
-        print(f"response: {response}")
 
         # assertion
         self.assertTrue(response == "Colocando a ração para o cachorro")
@@ -88,10 +87,9 @@ class TesteCachorro(unittest.TestCase):
 
         # execution
         response = assistant.doComand(audio_mock)
-        print(f"response: {response}")
 
         # assertion
-        self.assertTrue(response == "Verificando ração para o cachorro, Ainda há 10% de ração no pote.")
+        self.assertTrue(response == "Verificando ração para o cachorro, Ainda há 10% de ração no pote")
 
     def testar_trocar_racao_cachorro(self):
         # configuration
@@ -101,7 +99,7 @@ class TesteCachorro(unittest.TestCase):
         response = assistant.doComand(audio_mock)
 
         # assertion
-        self.assertTrue(response == "Trocando a ração velha no pote do cachorro.")
+        self.assertTrue(response == "Trocando a ração velha no pote do cachorro")
 
 class TesteAgua(unittest.TestCase):
 
@@ -111,19 +109,20 @@ class TesteAgua(unittest.TestCase):
 
         # execution
         response = assistant.doComand(audio_mock)
+        print(f"response: {response}")
 
         # assertion
-        self.assertTrue(response == "Colocando mais agua no pote.")
+        self.assertTrue(response == "Colocando mais agua no pote")
 
     def testar_verificar_agua(self):
         # configuration
-        audio_mock =  audio_catcher.play_recorded_audio("/util/audio/verifica_agua.wav")
+        audio_mock =  audio_catcher.play_recorded_audio("/util/audio/verificar_agua.wav")
 
         # execution
         response = assistant.doComand(audio_mock)
 
         # assertion
-        self.assertTrue(response == "Verificando se tem água no pote. Ainda há metade de água no pote.")
+        self.assertTrue(response == "Verificando se tem água no pote. Ainda há metade de água no pote")
 
     def testar_trocar_agua(self):
         # configuration
@@ -142,8 +141,8 @@ if __name__ == "__main__":
     
     #testes.addTest(carregador.loadTestsFromTestCase(TesteErrosNome))
     #testes.addTest(carregador.loadTestsFromTestCase(TesteGato))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteCachorro))
-    #testes.addTest(carregador.loadTestsFromTestCase(TesteAgua))
+    #testes.addTest(carregador.loadTestsFromTestCase(TesteCachorro))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteAgua))
 
     executor = unittest.TextTestRunner()
     executor.run(testes)

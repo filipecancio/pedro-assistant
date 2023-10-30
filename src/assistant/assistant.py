@@ -36,8 +36,6 @@ class Assistant():
         for settings_action in self.settings["actions"]:
             if settings_action["target"] == self.foundAnimalType(settings_action["target"], prhase_array):
                 return settings_action["commands"]
-            else :
-                return None
         return None
     
     def hasCommand(self, command_list, prhase_array):

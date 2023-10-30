@@ -139,9 +139,9 @@ if __name__ == "__main__":
     testes = unittest.TestSuite()
 
     
-    #testes.addTest(carregador.loadTestsFromTestCase(TesteErrosNome))
-    #testes.addTest(carregador.loadTestsFromTestCase(TesteGato))
-    #testes.addTest(carregador.loadTestsFromTestCase(TesteCachorro))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteErrosNome))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteGato))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteCachorro))
     testes.addTest(carregador.loadTestsFromTestCase(TesteAgua))
 
     executor = unittest.TextTestRunner()

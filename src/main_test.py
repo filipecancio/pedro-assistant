@@ -109,7 +109,6 @@ class TesteAgua(unittest.TestCase):
 
         # execution
         response = assistant.doComand(audio_mock)
-        print(f"response: {response}")
 
         # assertion
         self.assertTrue(response == "Colocando mais agua no pote")

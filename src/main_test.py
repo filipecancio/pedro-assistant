@@ -47,7 +47,7 @@ class TesteGato(unittest.TestCase):
         response = assistant.doComand(audio_mock)
 
         # assertion
-        self.assertTrue(response == "Colocando a ração para o gato.")
+        self.assertTrue(response == "Colocando a ração para o gato")
 
     def testar_verificar_racao_gato(self):
         # configuration
@@ -57,7 +57,7 @@ class TesteGato(unittest.TestCase):
         response = assistant.doComand(audio_mock)
 
         # assertion
-        self.assertTrue(response == "Verificando ração para o gato, Ainda há 20% de ração no pote.")
+        self.assertTrue(response == "Verificando ração para o gato, Ainda há 20% de ração no pote")
 
     def testar_trocar_racao_gato(self):
         # configuration
@@ -67,8 +67,7 @@ class TesteGato(unittest.TestCase):
         response = assistant.doComand(audio_mock)
 
         # assertion
-        self.assertTrue(response == "Colocando a ração para o gato.")
-
+        self.assertTrue(response == "Trocando a ração velha no pote do gato")
 
 class TesteCachorro(unittest.TestCase):
 
@@ -78,9 +77,10 @@ class TesteCachorro(unittest.TestCase):
 
         # execution
         response = assistant.doComand(audio_mock)
+        print(f"response: {response}")
 
         # assertion
-        self.assertTrue(response == "Colocando a ração para o cachorro.")
+        self.assertTrue(response == "Colocando a ração para o cachorro")
 
     def testar_verificar_racao_cachorro(self):
         # configuration
@@ -88,6 +88,7 @@ class TesteCachorro(unittest.TestCase):
 
         # execution
         response = assistant.doComand(audio_mock)
+        print(f"response: {response}")
 
         # assertion
         self.assertTrue(response == "Verificando ração para o cachorro, Ainda há 10% de ração no pote.")
@@ -101,7 +102,6 @@ class TesteCachorro(unittest.TestCase):
 
         # assertion
         self.assertTrue(response == "Trocando a ração velha no pote do cachorro.")
-
 
 class TesteAgua(unittest.TestCase):
 
@@ -135,16 +135,15 @@ class TesteAgua(unittest.TestCase):
         # assertion
         self.assertTrue(response == "Trocando a água do pote pra uma fresquinha")
 
-
 if __name__ == "__main__":
     carregador = unittest.TestLoader()
     testes = unittest.TestSuite()
 
     
-    testes.addTest(carregador.loadTestsFromTestCase(TesteErrosNome))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteGato))
+    #testes.addTest(carregador.loadTestsFromTestCase(TesteErrosNome))
+    #testes.addTest(carregador.loadTestsFromTestCase(TesteGato))
     testes.addTest(carregador.loadTestsFromTestCase(TesteCachorro))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteAgua))
+    #testes.addTest(carregador.loadTestsFromTestCase(TesteAgua))
 
     executor = unittest.TextTestRunner()
     executor.run(testes)

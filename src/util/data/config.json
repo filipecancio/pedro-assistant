@@ -20,9 +20,9 @@
         {
             "target": "água",
             "commands": [
-                {"target":"colocar","command":"Colocando mais agua no pote."},
-                {"target":"verificar","command":"Verificando se tem água no pote. Ainda há metade de água no pote."},
-                {"target":"trocar","command":"Trocando a água do pote pra uma fresquinha."}
+                {"target":"colocar","command":"Colocando mais agua no pote"},
+                {"target":"verificar","command":"Verificando se tem água no pote. Ainda há metade de água no pote"},
+                {"target":"trocar","command":"Trocando a água do pote pra uma fresquinha"}
             ]
         }        
     ]

@@ -8,6 +8,6 @@ def getDirectory(rel_dir):
 
 def getJson(rel_dir):
     complete_dir = getDirectory(rel_dir)
-    with open(complete_dir) as json_file:
+    with open(complete_dir, 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
         return data

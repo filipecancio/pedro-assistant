@@ -1,61 +1,29 @@
 {
-    "assistant_name": "pedro",
+    "assistant_name": "Pedro",
     "actions": [
         {
-            "name": "ligar",
-            "target": [
-                "lâmpada",
-                "televisão",
-                "ar-condicionado"
+            "target": "gato",
+            "commands": [
+                {"target":"colocar","command":"Colocando a ração para o gato"},
+                {"target":"verificar","command":"Verificando ração para o gato, Ainda há 20% de ração no pote"},
+                {"target":"trocar","command":"Trocando a ração velha no pote do gato"}
             ]
         },
         {
-            "name": "desligar",
-            "target": [
-                "lâmpada",
-                "televisão",
-                "ar-condicionado"
+            "target": "cachorro",
+            "commands": [
+                {"target":"colocar","command":"Colocando a ração para o cachorro"},
+                {"target":"verificar","command":"Verificando ração para o cachorro, Ainda há 10% de ração no pote"},
+                {"target":"trocar","command":"Trocando a ração velha no pote do cachorro"}
             ]
-        },
+        }, 
         {
-            "name": "acender",
-            "target": [
-                "lâmpada"
+            "target": "água",
+            "commands": [
+                {"target":"colocar","command":"Colocando mais agua no pote."},
+                {"target":"verificar","command":"Verificando se tem água no pote. Ainda há metade de água no pote."},
+                {"target":"trocar","command":"Trocando a água do pote pra uma fresquinha."}
             ]
-        },
-        {
-            "name": "apagar",
-            "target": [
-                "lâmpada"
-            ]
-        },
-        {
-            "name": "aumentar",
-            "target": [
-                "luminosidade",
-                "volume",
-                "temperatura"
-            ]
-        },
-        {
-            "name": "diminuir",
-            "target": [
-                "luminosidade",
-                "volume",
-                "temperatura"
-            ]
-        },
-        {
-            "name": "tocar",
-            "target": [
-                "música"
-            ]
-        },
-        {
-            "name": "parar",
-            "target": [
-                "música"
-            ]
-        }               
+        }        
     ]
 }

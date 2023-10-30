@@ -26,7 +26,7 @@ class Assistant():
                 
         return False
     
-    def foundAnimalType(self, animal_type, prhase_array):
+    def findTarget(self, animal_type, prhase_array):
         if animal_type in prhase_array:
             return animal_type
         else :
@@ -34,12 +34,12 @@ class Assistant():
         
     def hasCommandList(self, prhase_array):
         for settings_action in self.settings["actions"]:
-            if settings_action["target"] == self.foundAnimalType(settings_action["target"], prhase_array):
+            if settings_action["target"] == self.findTarget(settings_action["target"], prhase_array):
                 return settings_action["commands"]
         return None
     
     def hasCommand(self, command_list, prhase_array):
         for command in command_list:
-            if command["target"] == self.foundAnimalType(command["target"], prhase_array):
+            if command["target"] == self.findTarget(command["target"], prhase_array):
                 return command["command"]
         return None

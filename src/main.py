@@ -3,10 +3,15 @@ from domain.dog import Dog
 from domain.cat import Cat
 
 if __name__ == '__main__':
-    audio_catcher = AudioCatcher()
+    fido = Dog("Fido")
+    print(fido.eat())
+    print(fido.seeHungry())
+    print(fido.eat())
+    print(fido.seeHungry())
+    #audio_catcher = AudioCatcher()
 
-    example = audio_catcher.play_recorded_audio("/util/audio/agua.wav")
-    print(example)
+    #example = audio_catcher.play_recorded_audio("/util/audio/agua.wav")
+    #print(example)
 
 #if __name__ == "__main__":
     #fido = Dog("Fido")

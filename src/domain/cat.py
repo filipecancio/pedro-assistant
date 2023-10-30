@@ -37,3 +37,9 @@ class Cat:
     
     def onThirsty(self):
         return f'😺 {self.name} is very thirsty 😭😭😭'
+    
+    def seeThirsty(self):
+        return f'😺 {self.name} hungry: {self.thirst}'
+    
+    def seeHungry(self):
+        return f'😺 {self.name} thirsty: {self.hunger}'

@@ -1,8 +1,11 @@
 import array as arr
 class Dog:
+    hunger = [],
+    thirst = [],
+    
     def __init__(self, name):
         self.name = name
-        self.hunger = ["🍪","🍪","🍪","🍪","🍪"],
+        self.hunger = ["🍪"],
         self.thirst = ["🥛","🥛","🥛","🥛","🥛"],
 
     def drink(self):
@@ -21,8 +24,7 @@ class Dog:
     
     def poop(self):
         try:
-            a =  list(self.hunger)
-            a.pop()
+            self.hunger.pop(1)
             return f'🐶 {self.name} pooped 💩'
         except(IndexError):
             self.onHungry()
@@ -39,3 +41,9 @@ class Dog:
     
     def onThirsty(self):
         return f'🐶 {self.name} is very thirsty 😭😭😭'
+    
+    def seeThirsty(self):
+        return f'🐶 {self.name} hungry: {self.thirst}'
+    
+    def seeHungry(self):
+        return f'🐶 {self.name} thirsty: {self.hunger}'

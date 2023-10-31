@@ -34,3 +34,13 @@ Voce pode fazer as seguintes perguntas (use o por favor, seja educado!):
 - Pedro, colocar água por favor
 - Pedro, verificar água por favor
 - Pedro, trocar água por favor
+
+## Instruções
+
+### 1 - Configurando o projeto
+https://github.com/filipecancio/pedro-assistant/assets/13178261/fbd4a9bb-5b09-4ce5-9358-de8f16dd37b2
+
+### 2 - Executando o projeto
+https://github.com/filipecancio/pedro-assistant/assets/13178261/fed2ba83-f433-4007-b772-e388254fa218
+
+

@@ -46,5 +46,5 @@ https://github.com/filipecancio/pedro-assistant/assets/13178261/fed2ba83-f433-40
 ### 3 - Explicando o assistente
 https://github.com/filipecancio/pedro-assistant/assets/13178261/7a6c1cbc-5eea-4f13-bcb7-6cc6f6b48897
 
-
-
+### 3 - Explicando os testes
+https://github.com/filipecancio/pedro-assistant/assets/13178261/c6ad5f40-a9f0-4a85-9d43-d8f8927c2d71

@@ -43,4 +43,8 @@ https://github.com/filipecancio/pedro-assistant/assets/13178261/fbd4a9bb-5b09-4c
 ### 2 - Executando o projeto
 https://github.com/filipecancio/pedro-assistant/assets/13178261/fed2ba83-f433-4007-b772-e388254fa218
 
+### 3 - Explicando o assistente
+https://github.com/filipecancio/pedro-assistant/assets/13178261/7a6c1cbc-5eea-4f13-bcb7-6cc6f6b48897
+
+
 
